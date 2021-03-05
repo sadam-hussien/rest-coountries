@@ -1,0 +1,49 @@
+@import "../../../../scss/variables/colors";
+@import "../../../../scss/variables/fonts";
+@import "../../../../scss/variables/other";
+
+.search-box {
+    @media (max-width: 767px) {
+        margin-bottom: $medium;
+        width: 100%;
+    }
+
+    .icon {
+        min-width: 1.2rem;
+    }
+
+    .form-group {
+        padding-left: $large + $small;
+        background: $light-mode-el;
+        box-shadow: 0 0 10px rgba($light-mode-text, .07);
+        border-radius: 3px;
+        overflow: hidden;
+
+        .icon {
+            position: absolute;
+            top: 50%;
+            left: $medium;
+            transform: translateY(-40%);
+            * {
+                color: $light-mode-inp;
+            }
+        }
+
+        .form-control {
+            background: transparent;
+            border: none;
+            color: $light-mode-inp;
+            width: 290px;
+
+            @media (max-width: 767px) {
+                width: 100%;
+            }
+
+            &::placeholder {
+                font-size: $main-font-size-small;
+                color: $light-mode-inp;
+            }
+        }
+    }
+
+}

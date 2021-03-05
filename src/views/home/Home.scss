@@ -1,0 +1,17 @@
+@import "../../scss/variables/colors";
+@import "../../scss/variables/fonts";
+@import "../../scss/variables/other";
+
+.home-page {
+
+    // start search-options 
+    .search-options {
+        margin-bottom: $large;
+
+        @media (max-width: 767px) {
+            flex-wrap: wrap;
+        }
+    }
+    // ==== end search-options      
+
+}

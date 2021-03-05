@@ -1,0 +1,68 @@
+@import "../../../../scss/variables/colors";
+@import "../../../../scss/variables/fonts";
+@import "../../../../scss/variables/other";
+
+.select-box {
+    width: 220px;
+
+    @media (max-width: 767px) {
+        width: 100%;
+    }
+
+    .form-control {
+        width: 100%;
+        background: $light-mode-el;
+        box-shadow: 0 0 10px rgba($light-mode-text, .07);
+        border-radius: 3px;
+        cursor: pointer;
+
+        .select-box-item__control {
+            height: 100%;
+            border: none;
+            border-radius: 0;
+            background: transparent;
+            box-shadow: none;
+
+            * {
+                color: $light-mode-inp;
+            }
+
+            .select-box-item__placeholder {
+                font-size: $main-font-size-small;
+            }
+
+            .select-box-item__indicator-separator {
+                display: none;
+            }
+
+            .select-box-item__indicators {
+                padding: 0 $small;
+            }
+        }
+
+        .select-box-item__menu {
+            background: $light-mode-el;
+            box-shadow: 0 0 10px rgba($light-mode-text, .07);
+            border-radius: 3px;
+            margin-top: $small;
+
+            .select-box-item__menu-list {
+                padding: 0;
+                max-height: 250px;
+
+                .select-box-item__option {
+                    cursor: pointer;
+                    padding: $small $medium;
+                    transition: all .5s;
+
+                    &:hover, &.select-box-item__option--is-focused, &.select-box-item__option--is-selected {
+                        background: $light-mode-inp;
+                        color: $light-mode-el;
+                    }
+                }
+            }
+
+        }
+    }
+
+}

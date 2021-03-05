@@ -1,0 +1,100 @@
+.dark-theme {
+
+    // start body
+    body {
+        background: $dark-mode-bg;
+        color: $dark-mode-text !important;
+    }
+    // ==== end body
+
+    // start main-header
+    .main-header {
+        background: $dark-mode-el;
+
+        .toggle-mode {
+            button {
+                color: $dark-mode-text;
+            }
+        }
+    }
+    // === end main-header
+
+    // start .search-box 
+    .search-box {
+        .form-group {
+            background: $dark-mode-el;
+
+            .form-control {
+                color: $dark-mode-text;
+                &::placeholder {
+                    color: rgba($dark-mode-text, .7)
+                }
+            }
+
+            .icon {
+                * {
+                    color: $dark-mode-text;
+                }
+            }
+        }
+    }
+    // ==== ed .search-box 
+
+    // start .select-box
+    .select-box {
+        .form-control {
+            background: $dark-mode-el;
+            .select-box-item__control * {
+                color: rgba($dark-mode-text, .7);
+            }
+
+            .select-box-item__menu {
+                background: $dark-mode-el;
+                box-shadow: 0 0 10px rgba($dark-mode-text, .07);
+                color: $dark-mode-text;
+    
+                .select-box-item__menu-list {
+                    padding: 0;
+                    max-height: 250px;
+    
+                    .select-box-item__option {
+    
+                        &:hover, &.select-box-item__option--is-focused, &.select-box-item__option--is-selected {
+                            background: $dark-mode-text;
+                            color: $dark-mode-el;
+                        }
+                    }
+                }
+    
+            }
+        }
+    }
+    // ==== end .select-box 
+
+    // start countries
+    .countries {
+        ul .country-item {
+            background: $dark-mode-el;
+            box-shadow: 0 0 10px rgba($dark-mode-text, .02);
+        }
+
+        .show-more button {
+            background: $dark-mode-el;
+            color: $dark-mode-text;
+
+        }
+    }
+    // ==== end countries
+
+    .country-page .back-to-home-btn a {
+        background: $dark-mode-el;
+        color: $dark-mode-text;
+
+        .icon {
+            * {
+                color: $dark-mode-text !important;
+            }
+        }
+    }
+
+}

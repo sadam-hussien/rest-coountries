@@ -1,0 +1,31 @@
+.form-control {
+    padding: 0;
+    display: block;
+    height: $inp-height;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    background:$light-mode-inp;
+    font-size: 1.1rem;
+    color: $light-mode-text;
+    text-transform: capitalize;
+
+    &::first-letter {
+        text-transform: capitalize;
+    }
+
+    &::placeholder {
+        color: $light-mode-text;
+        font-size: .98rem;
+    }
+}
+
+.form-group {
+
+}
+
+input, button, textarea, select {
+    &:focus {
+        outline: none;
+    }
+}

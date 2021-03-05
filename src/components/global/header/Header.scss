@@ -1,0 +1,54 @@
+@import "../../../scss/variables/colors";
+@import "../../../scss/variables/fonts";
+@import "../../../scss/variables/other";
+
+.main-header {
+    background: $light-mode-el;
+    box-shadow: 0 0 10px rgba($light-mode-text, .1);
+    height: $header-height;
+
+    // start header-slogan
+    .header-slogan {
+        .text {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-weight: $main-font-medium;
+
+            @media (max-width: 576px) {
+                font-size: 1.2rem;
+            }
+        }
+    }
+    // === end header-slogan
+
+    // start toggle-mode
+    .toggle-mode {
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: $main-font-medium;
+            background: transparent;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+
+            // start icon
+            .icon {
+                min-width: 1.5rem;
+                margin-right: $small;
+            }
+            // === end icon
+
+            @media (max-width: 576px) {
+                font-size: $main-font-size-small;
+
+                .icon {
+                    min-width: 1.2rem;
+                }
+            }
+        }
+    }
+    // ==== end toggle-mode
+
+}

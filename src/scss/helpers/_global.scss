@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $main-font-name;
+    font-size: $main-font-size;
+    font-weight: $main-font-normal;
+    color: $light-mode-text;
+    background: $light-mode-bg;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.page {
+    padding-top: $large;
+    padding-bottom: $large;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+    @media (min-width: 576px) {
+        max-width: 540px;
+    }
+
+    @media (min-width: 768px) {
+        max-width: 720px;
+    }
+
+    @media (min-width: 992px) {
+        max-width: 960px;
+    }
+
+    @media (min-width: 1200px) {
+        max-width: 1140px;
+    }
+        
+}
+
+.padding-section {
+    padding-top: $large;
+    padding-bottom: $large;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.list-unstyled {
+    list-style: none;
+    margin-top: 0;
+    padding: 0;
+}
